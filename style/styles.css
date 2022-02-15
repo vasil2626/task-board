@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif, Arial, Helvetica, sans-serif;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  padding: 50px 0;
+  background: url("https://picsum.photos/1920/1080") center / cover no-repeat;
+}
+
+.boards {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  /* justify-content: space-between; */
+  row-gap: 15px;
+}
+
+.boards__item {
+  display: flex;
+  flex-direction: column;
+  align-self: baseline;
+  max-width: 250px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  margin: 0 15px;
+  padding: 10px;
+  transition: 0.3s all ease;
+  border-radius: 3px;
+}
+
+.title {
+  padding: 5px;
+  color: #fefefe;
+}
+.title:focus {
+  outline: 1px solid rgba(168, 168, 168, 0.45);
+}
+
+.list {
+  min-height: 40px;
+}
+
+.list__item {
+  background-color: #fefefe;
+  border-radius: 3px;
+  padding: 10px;
+  text-align: center;
+  margin: 4px 0;
+  cursor: pointer;
+  font-weight: 400;
+  font-size: 14px;
+  outline: auto;
+  border: none;
+}
+
+.form {
+  display: none;
+  border-radius: 3px;
+  margin-top: auto;
+}
+
+.textarea {
+  resize: none;
+  height: 60px;
+  border-radius: 3px;
+  border: none;
+  background: #fff;
+  padding: 10px;
+  width: 100%;
+}
+
+.textarea:focus {
+  outline: none;
+}
+.buttons {
+  display: flex;
+}
+
+.add__item-btn {
+  background: rgb(13, 136, 218);
+  border: none;
+  height: 35px;
+  cursor: pointer;
+  padding: 10px;
+  color: #fff;
+  border-radius: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-right: 10px;
+}
+
+.cancel__item-btn {
+  padding: 0 10px;
+  background: rgb(160, 17, 12);
+  border: none;
+  height: 35px;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25%;
+  margin-left: auto;
+  flex-shrink: 0;
+}
+
+.add__btn {
+  height: 30px;
+  background: rgba(155, 155, 155, 0.3);
+  color: #fff;
+  border-radius: 3px;
+  margin-top: 5px;
+  display: flex;
+  font-size: 12px;
+  align-items: center;
+  padding-left: 10px;
+  cursor: pointer;
+}
+.add__btn span {
+  font-size: 20px;
+  margin-right: 10px;
+  color: #fff;
+}
+
+.button {
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(19, 130, 204, 0.62);
+  border: none;
+  width: 150px;
+  cursor: pointer;
+  position: absolute;
+  left: 50%;
+  bottom: 50px;
+  transform: translate(-50%);
+  color: #fff;
+  border-radius: 3px;
+  font-size: 14px;
+}
+
+
+.remove__board{
+    display: flex;
+    margin-top: 10px;
+}
+
